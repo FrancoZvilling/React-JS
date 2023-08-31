@@ -8,12 +8,12 @@ const Item = ({prod}) => {
     return (
 
         <>
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '15rem' }}>
             <Card.Img variant="top" src={prod.img} />
             <Card.Body>
                 <Card.Title>{prod.nombre}</Card.Title>
-                <Card.Text>
-                    {prod.descrip}
+                <Card.Text id="autor">
+                    {prod.autor}
                 </Card.Text>
                 <Card.Text id="precio">
                     ${prod.precio}
@@ -22,10 +22,7 @@ const Item = ({prod}) => {
             </Card.Body>
         </Card>
         </>
-        
-        
-
-    )
+           )
 }
 
 export default Item

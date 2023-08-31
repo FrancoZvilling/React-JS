@@ -1,7 +1,7 @@
 .productos{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 5em;
     flex-wrap: wrap;
     font-family: 'Rubik', sans-serif;
@@ -9,34 +9,42 @@
 }
 
 .card{
-    background-color: rgb(231, 231, 231);
-    gap: 3em;
-    border: 1px solid black;
+    
     border-radius: 3px;
 }
 
 .productos img{
-    margin-left: 45px;
-    width: 200px;   
+    
+    width: 150px; 
+    height: 230px;  
     
 
 }
 
+.card-text{
+    font-size: 12px;
+}
 
 .card-title{
     font-size: 1em;
-    font-weight: 900;
-    text-align: center;
+    margin-top: 10px;
+    
+}
+
+#autor{
+    color: orange;
 }
 
 #precio{
+    font-size: 15px;
     font-weight: 900;
-    background-color: rgb(255, 187, 0);
     width: auto;
 }
 
 .btn-primary{
-    margin-left: 85px;
-    background-color: rgb(255, 187, 0);
-    border-radius: 3px
+    background-color: rgb(76, 0, 255);
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
 }

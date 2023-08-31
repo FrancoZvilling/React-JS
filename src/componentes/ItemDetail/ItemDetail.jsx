@@ -9,14 +9,18 @@ const ItemDetail = ({producto})=>{
     }
 
     return(
-        <div className="detalles">
-            <h1>{producto.nombre}</h1>
-            <img src={producto.img} alt={producto.nombre}/>
-            <p>{producto.descrip}</p>
-            <p id="precio" className="precio">${producto.precio}</p>
-            <Contador className="count" initial={1} stock={producto.stock} onAdd={onAdd}/>
-        
+        <div className="det-contenedor">
+            <img id="det-img" src={producto.img} alt={producto.nombre}/>
+
+            <div>
+                <h1>{producto.nombre}</h1>
+                <p>{producto.autor}</p>
+                <p className="det-precio">${producto.precio}</p>
+                <Contador className="det-count" initial={1} stock={producto.stock} onAdd={onAdd}/>
+            </div>
+
         </div>
+        
     )
 }
 
