@@ -10,14 +10,14 @@ const Navbar = () => {
         <div className="navegacion">
        
             <div className="navegacion__logo">
-             <a href=""><img src={loz}/></a>
-            </div>
+            <NavLink to="/"><img src={loz}/></NavLink>
+             </div>
     
             <ul className="navegacion__lista">
                 <NavLink to="/categoria/mangas">Mangas</NavLink>
-                <a href=""><li>Autores</li></a>
-                <a href=""><li>Ofertas</li></a>
-                <a href=""><li>Recomendaciones</li></a>
+                <NavLink to="/categoria/ofertas">Ofertas</NavLink>
+                <NavLink to="/categoria/recomendaciones">Recomendaciones</NavLink>
+                
             </ul>
         
             <ul className="navegacion__utilidades">
