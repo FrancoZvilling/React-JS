@@ -1,0 +1,42 @@
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5em;
+    flex-wrap: wrap;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.card{
+    background-color: rgb(231, 231, 231);
+    gap: 3em;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.productos img{
+    margin-left: 45px;
+    width: 200px;   
+    
+
+}
+
+
+.card-title{
+    font-size: 1em;
+    font-weight: 900;
+    text-align: center;
+}
+
+#precio{
+    font-weight: 900;
+    background-color: rgb(255, 187, 0);
+    width: auto;
+}
+
+.btn-primary{
+    margin-left: 85px;
+    background-color: rgb(255, 187, 0);
+    border-radius: 3px
+}

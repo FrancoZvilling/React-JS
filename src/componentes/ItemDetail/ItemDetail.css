@@ -1,0 +1,19 @@
+.detalles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.detalles img{
+    height: 600px;
+}
+
+.count{
+    margin-top: 0;
+}
+
+.precio{
+    font-size: 30px;
+}

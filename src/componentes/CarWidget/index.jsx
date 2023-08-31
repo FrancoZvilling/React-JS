@@ -7,7 +7,7 @@ const CartWidget = () => {
         <div className="car">
             
             <FaShoppingCart/>
-            <Badge bg="danger">0</Badge>
+            <Badge>0</Badge>
 
         </div>
     )
