@@ -39,7 +39,7 @@
   
   .button {
     margin-top: auto;
-    margin-bottom: 10px; /* Añadido para separar el botón del valor */
+    margin-bottom: 10px; 
     padding: 10px 20px;
     font-size: 18px;
     background-color: #007bff;

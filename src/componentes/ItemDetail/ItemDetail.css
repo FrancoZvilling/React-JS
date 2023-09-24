@@ -8,3 +8,15 @@
     height: 600px;
     margin-left: 50px;
 }
+
+.boton-carrito{
+    margin-top: auto;
+    margin-bottom: 10px; /* Añadido para separar el botón del valor */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
