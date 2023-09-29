@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import Contador from "../ItemCount"
 import "./ItemDetail.css"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { CartContext } from "../../context/cartContext";
 
 const ItemDetail = ({producto})=>{
@@ -17,18 +17,26 @@ const ItemDetail = ({producto})=>{
     }
 
     return(
-        <div className="det-contenedor">
-            <img id="det-img" src={producto.img} alt={producto.nombre}/>
+        <>
+            <div className="det-contenedor">
+                <img id="det-img" src={producto.img} alt={producto.nombre}/>
 
-            <div>
-                <h1>{producto.nombre}</h1>
-                <p>{producto.autor}</p>
-                <p className="det-precio">${producto.precio}</p>
-                { !cantidadAgreg ? <Contador className="det-count" initial={1} stock={producto.stock} onAdd={onAdd}/>
-                 : <button  as={Link} to={"/carrito"} className="boton-carrito">ir al carrito</button>}
+                <div className="det-productos">
+                    <h1 id="det-nombre">{producto.nombre}</h1>
+                    <p id="det-autor">{producto.autor}</p>
+                    <p id="det-precio">${producto.precio}</p>
+                    { !cantidadAgreg ? <Contador className="det-count" initial={1} stock={producto.stock} onAdd={onAdd}/>
+                 : <NavLink id="nav-carrito" to="/cart" ><button className="boton-carrito" >ir al carrito</button></NavLink>}
+                </div>
+
             </div>
 
-        </div>
+            <div className="det-detalle">
+                <h2 id="det-tit">SINOPSIS</h2>
+                <p>{producto.detalle}</p>
+            </div>
+        </>
+       
         
     )
 }

@@ -1,20 +1,58 @@
 .det-contenedor{
     display: flex;
+    align-items: center;
     margin-top: 100px;
-    gap: 50px;
-}
-
-#det-img{
-    height: 600px;
+    gap: 300px;
     margin-left: 50px;
 }
 
+.det-productos{
+    display: flex;
+    flex-direction: column;
+}
+
+.det-detalle{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+
+#det-nombre{
+    text-align: center;
+}
+
+#det-tit{
+    color: orange;
+}
+
+#det-autor{
+    text-align: center;
+    color: orange;
+}
+
+#det-precio{
+    font-weight: 900;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#det-img{
+    height: 500px;
+    width: 350px;
+    margin-left: 50px;
+}
+
+#nav-carrito{
+    margin: auto;
+}
+
 .boton-carrito{
-    margin-top: auto;
-    margin-bottom: 10px; /* Añadido para separar el botón del valor */
+    margin: auto;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;

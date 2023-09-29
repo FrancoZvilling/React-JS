@@ -23,7 +23,7 @@ const Navbar = () => {
             <ul className="navegacion__utilidades">
                 <a href=""><li>Buscar</li></a>
                 <a href=""><li>Iniciar sesión</li></a>
-                <a href=""><li>Carrito</li></a>
+                <NavLink to="/cart"><a href=""><li>Carrito</li></a></NavLink>
                 <NavLink to="/cart"><CartWidget/></NavLink>
             </ul>
         </div>

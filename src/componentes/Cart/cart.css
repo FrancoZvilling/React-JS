@@ -2,18 +2,27 @@
     margin-top: 100px;
 }
 
-.text-total{
-    color: orange;
+
+#total{
     font-family: 'Rubik', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-right: 40px;
+}
+
+.fin-compra{
+    display: flex;
+    justify-content: center;
+    Border: 1px solid rgb(0, 0, 0);
+    gap: 5px;
 }
 
 .btn{
     margin-top: auto;
-    margin-bottom: 10px; 
+    margin-bottom: 30px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -21,13 +30,23 @@
 }
 
 .btn2{
-    margin-top: auto;
-    margin-bottom: 10px; 
+    margin-bottom: 30px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #ff5100;
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#btn2-margin{
+    margin-top: auto;
+}
+
+#vacio{
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
 }

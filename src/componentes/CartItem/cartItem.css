@@ -2,9 +2,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
 }
 
 img{
     width: 100px;
+}
+
+#button{
+    background-color: orange;
+    font-size: 20px;
+    border-color: orange;
+    border-radius: 100px;
+    cursor: pointer;
 }

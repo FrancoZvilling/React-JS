@@ -11,7 +11,7 @@ const CartItem=({item})=>{
             <p>${item.precio}</p>
             <p>Cantidad: {item.cantidad}</p>
             <p>Subtotal: ${item.cantidad * item.precio}</p>
-            <button onClick={()=>deleteItem(item.id)}>X</button>
+            <button id="button" onClick={()=>deleteItem(item.id)}>X</button>
 
         </div>
     )

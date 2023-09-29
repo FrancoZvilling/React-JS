@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../context/cartContext";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./cart.css"
 import CartItem from "../CartItem/cartItem";
 
@@ -11,14 +11,15 @@ const Cart=()=>{
             {cart.length
             ? <div>
                 {cart.map((item)=><CartItem key={item.id} item={item}/>)}
-                <p className="text-total">Total a pagar: ${total()}</p>
-                <div>
+                
+                <div className="fin-compra">
+                    <p id="total">Total a pagar: ${total()}</p>
                     <button className="btn" onClick={clear}>VACIAR CARRITO</button>
-                    <button className="btn2">FINALIZAR COMPRA</button>
+                    <NavLink id="btn2-margin" to="/checkout"><button className="btn2">FINALIZAR COMPRA</button></NavLink>
                 </div>
               </div>
             : <div>
-                <h3>TU CARRITO ESTÁ VACÍO</h3>
+                <h3 id="vacio">TU CARRITO ESTÁ VACÍO</h3>
               </div>}
         </div>
     )

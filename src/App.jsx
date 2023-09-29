@@ -8,6 +8,7 @@ import { db } from "./firebase/firebase"
 import { listProductos } from "./mock/data"
 import { CartProvider } from "./context/cartContext"
 import Cart from "./componentes/Cart/cart"
+import Checkout from "./componentes/Checkout/checkout"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
         <Route path='/item/:id' element={<ItemDetailContainer/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
       </Routes> 
     </BrowserRouter>
     </CartProvider>
