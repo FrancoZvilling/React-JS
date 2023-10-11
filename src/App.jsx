@@ -3,9 +3,6 @@ import ItemListContainer from "./componentes/ItemListContainer"
 import Navbar from "./componentes/Navbar"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import React, {useEffect} from "react"
-import { addDoc, collection } from "firebase/firestore"
-import { db } from "./firebase/firebase"
-import { listProductos } from "./mock/data"
 import { CartProvider } from "./context/cartContext"
 import Cart from "./componentes/Cart/cart"
 import Checkout from "./componentes/Checkout/checkout"
@@ -13,10 +10,7 @@ import Checkout from "./componentes/Checkout/checkout"
 
 function App() {
 
-  //useEffect(()=>{
-  //  const collectionProd = collection(db, "productos")
-  //  listProductos.map((item)=>addDoc(collectionProd, item))
-  //},[])
+  
 
   return (
     

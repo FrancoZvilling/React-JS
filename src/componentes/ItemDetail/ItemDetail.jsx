@@ -11,7 +11,6 @@ const ItemDetail = ({producto})=>{
     
 
     const onAdd = (cantidad)=>{
-        console.log("Compraste", cantidad)
         setCantidadAgreg(cantidad)
         addItem(producto, cantidad)
     }

@@ -1,6 +1,5 @@
 import CartWidget from "../CarWidget";
 import "./index.css"
-import loz from "C:/Users/franc/Desktop/Franco/Programacion/React/mi-proyecto-react/src/assets/img/loz.png"
 import {NavLink} from "react-router-dom"
 
 const Navbar = () => {
@@ -10,7 +9,7 @@ const Navbar = () => {
         <div className="navegacion">
        
             <div className="navegacion__logo">
-            <NavLink to="/"><img src={loz}/></NavLink>
+            <NavLink to="/"><img src="https://i.postimg.cc/pdCCdQTh/Dorado-y-Azul-cono-de-Libro-Educaci-n-Logo.png"/></NavLink>
              </div>
     
             <ul className="navegacion__lista">
@@ -23,7 +22,7 @@ const Navbar = () => {
             <ul className="navegacion__utilidades">
                 <a href=""><li>Buscar</li></a>
                 <a href=""><li>Iniciar sesión</li></a>
-                <NavLink to="/cart"><a href=""><li>Carrito</li></a></NavLink>
+                <NavLink to="/cart"><li>Carrito</li></NavLink>
                 <NavLink to="/cart"><CartWidget/></NavLink>
             </ul>
         </div>

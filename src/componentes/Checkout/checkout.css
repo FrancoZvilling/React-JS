@@ -1,0 +1,49 @@
+.checkout{
+    margin-top: 100px;
+
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin-left: 15px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: rgb(173, 117, 11);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+#boton{
+    background-color: orange;
+    font-size: 20px;
+    border-color: orange;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fin-orden{
+    margin-top: 400px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fin-orden h2{
+    color: orange;
+    font-size: 40px;
+}
+
+.fin-orden h5{
+    font-size: 20px;
+}
+
+#orden{
+    display: inline;
+    color: orange;
+}
